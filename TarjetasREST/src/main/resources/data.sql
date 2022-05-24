@@ -1,1 +1,0 @@
-INSERT INTO tarjetas VALUES(null,'camion',100,1000,18,66,'banco',now(),null);
