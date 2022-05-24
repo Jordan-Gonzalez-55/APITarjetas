@@ -1,4 +1,4 @@
-package com.ibm.academia.restapi.modelos.repository;
+package com.ibm.academia.restapi.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

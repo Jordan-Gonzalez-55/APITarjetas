@@ -1,4 +1,4 @@
-package com.ibm.academia.restapi.modelos.service;
+package com.ibm.academia.restapi.service;
 
 import com.ibm.academia.restapi.modelos.entidades.Tarjeta;
 

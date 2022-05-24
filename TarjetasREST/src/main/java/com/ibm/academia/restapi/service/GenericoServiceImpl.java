@@ -1,4 +1,4 @@
-package com.ibm.academia.restapi.modelos.service;
+package com.ibm.academia.restapi.service;
 
 import java.util.Optional;
 

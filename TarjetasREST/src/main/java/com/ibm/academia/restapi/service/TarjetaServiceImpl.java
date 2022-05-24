@@ -1,9 +1,9 @@
-package com.ibm.academia.restapi.modelos.service;
+package com.ibm.academia.restapi.service;
 
 import org.springframework.stereotype.Service;
 
 import com.ibm.academia.restapi.modelos.entidades.Tarjeta;
-import com.ibm.academia.restapi.modelos.repository.TarjetaRepository;
+import com.ibm.academia.restapi.repository.TarjetaRepository;
 
 @Service
 public class TarjetaServiceImpl extends GenericoServiceImpl<Tarjeta, TarjetaRepository>implements TarjetaService{

@@ -1,4 +1,4 @@
-package com.ibm.academia.restapi.modelos.controoller;
+package com.ibm.academia.restapi.controoller;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ibm.academia.restapi.modelos.entidades.Tarjeta;
-import com.ibm.academia.restapi.modelos.service.TarjetaService;
+import com.ibm.academia.restapi.service.TarjetaService;
 
 @RestController
 @RequestMapping("tarjetas")
