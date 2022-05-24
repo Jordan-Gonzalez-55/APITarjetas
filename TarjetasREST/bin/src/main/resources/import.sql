@@ -1,0 +1,1 @@
+INSERT INTO tarjetas (pasion, salario_minimo, salario_maximo, edad_minima, edad_maxima, nombre_tarjeta, fecha_alta) VALUES('camion',100,1000,18,66,'banco',now());
