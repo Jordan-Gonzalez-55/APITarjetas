@@ -4,6 +4,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Positive;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,8 +24,28 @@ public class Tarjeta implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    //Datos a ingresar en el endpoint----------------
+    @NotNull(message = "No puede ser nulo")
+    @NotEmpty(message = "No puede estar vacio")
     @Column(name = "pasion")
     private String pasion;
+
+    @Transient
+    @NotNull(message = "No puede ser nulo")
+    @NotEmpty(message = "No puede estar vacio")
+    @Positive(message = "Debe ser mayor a 0")
+    private Integer edadSeleccionada;
+
+    @Transient
+    @NotNull(message = "No puede ser nulo")
+    @NotEmpty(message = "No puede estar vacio")
+    @Positive(message = "Debe ser mayor a 0")
+    private Double salarioSeleccionado;
+
+    @Transient
+    private Integer puerto;
+    //--------------------------------------
+
 
     @Column(name = "salario_minimo")
     private Double salarioMinimo;
