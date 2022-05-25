@@ -1,5 +1,7 @@
 package com.ibm.academia.restapi.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.ibm.academia.restapi.modelos.entidades.Tarjeta;
@@ -14,9 +16,12 @@ public class TarjetaServiceImpl extends GenericoServiceImpl<Tarjeta, TarjetaRepo
 	}
 
 	@Override
-	public Tarjeta buscarMejorTarjeta(String pasion, Double salario, Integer edad) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Tarjeta> buscarMejorTarjeta(String pasion, Double salario, Integer edad) {
+		System.out.println(pasion);
+		System.out.println(salario);
+		System.out.println(edad);
+		System.out.println((List<Tarjeta>) this.repository.mejorOferta(pasion,edad,salario));
+		return (List<Tarjeta>) this.repository.mejorOferta(pasion,edad,salario);
 	}
 
 }

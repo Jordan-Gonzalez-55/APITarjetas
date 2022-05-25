@@ -22,7 +22,7 @@ public class Tarjeta implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer ID;
 
     //Datos a ingresar en el endpoint----------------
     @NotNull(message = "No puede ser nulo")
