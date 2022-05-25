@@ -37,8 +37,8 @@ INSERT INTO tarjetas (pasion, salario_minimo, salario_maximo, edad_minima, edad_
 INSERT INTO tarjetas (pasion, salario_minimo, salario_maximo, edad_minima, edad_maxima, nombre_tarjeta, fecha_alta) VALUES('Shopping',35000,49999,24,75,'Best Buy Banamex',now());
 INSERT INTO tarjetas (pasion, salario_minimo, salario_maximo, edad_minima, edad_maxima, nombre_tarjeta, fecha_alta) VALUES('Shopping',35000,49999,24,75,'The Home Depot',now());
 
-INSERT INTO tarjetas (pasion, salario_minimo, salario_maximo, edad_minima, edad_maxima, nombre_tarjeta, fecha_alta) VALUES('Shopping',50000,100000000000000000000000,24,75,'B-smart',now());
-INSERT INTO tarjetas (pasion, salario_minimo, salario_maximo, edad_minima, edad_maxima, nombre_tarjeta, fecha_alta) VALUES('Shopping',50000,100000000000000000000000,24,75,'Afinity Card',now());
+INSERT INTO tarjetas (pasion, salario_minimo, salario_maximo, edad_minima, edad_maxima, nombre_tarjeta, fecha_alta) VALUES('Shopping',50000,100000000000000000000000,18,23,'B-smart',now());
+INSERT INTO tarjetas (pasion, salario_minimo, salario_maximo, edad_minima, edad_maxima, nombre_tarjeta, fecha_alta) VALUES('Shopping',50000,100000000000000000000000,18,23,'Afinity Card',now());
 INSERT INTO tarjetas (pasion, salario_minimo, salario_maximo, edad_minima, edad_maxima, nombre_tarjeta, fecha_alta) VALUES('Shopping',50000,100000000000000000000000,24,75,'Platinum',now());
 
 
