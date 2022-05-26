@@ -46,7 +46,7 @@ public class TarjetaValidacion {
                 map(tarjeta -> {
                     tarjeta.setPuerto(Integer.parseInt(environment.getProperty("local.server.port")));
                     return tarjeta;
-                }).collect(Collectors.toList());;
+                }).collect(Collectors.toList());
 
         if(tarjetasEncontradas.isEmpty())
             throw new NotFoundException(String.format("No se encontraron tarjetas diponibles"));

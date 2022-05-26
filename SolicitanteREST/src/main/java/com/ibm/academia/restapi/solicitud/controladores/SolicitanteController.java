@@ -34,12 +34,12 @@ public class SolicitanteController {
 	@GetMapping("/tarjetIdeal/pasion/{pasion}/salario/{salario}/edad/{edad}")
 	public ResponseEntity<?> mejoresTarjetasSolicitante(@PathVariable String pasion,@PathVariable Double salario, @PathVariable Integer edad){
 		Map<String, Object> respuesta = new HashMap<>();
-		List<Solicitante> solicitante = new ArrayList<>();;
+		List<Solicitante> solicitante = new ArrayList<>();
 
 		try {
 			solicitante = solicitanteService.tardejatIdeal(pasion, salario, edad);
-		} catch (FeignException e) {
-			respuesta.put("mensaje", e.getMessage()+" causa "+e.getCause());
+		} catch (FeignException fg) {
+			respuesta.put("mensaje", fg.getMessage()+" causa "+fg.getCause());
 			return new ResponseEntity<Map<String,Object>>(respuesta, HttpStatus.NOT_FOUND);
 		} catch (Exception e) {
 			respuesta.put("mensaje", e.getMessage()+" causa "+e.getCause());

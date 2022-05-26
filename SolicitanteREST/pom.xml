@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ibm.academia.restapi.items</groupId>
-	<artifactId>restitemst</artifactId>
+	<artifactId>solicitanterest</artifactId>
 	<version>1.0</version>
-	<name>RESTItemsT</name>
+	<name>SolicitanteREST</name>
 	<description>Items for Spring Boot</description>
 
 	<properties>
@@ -54,6 +54,14 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
 		</dependency>
 	</dependencies>
 
