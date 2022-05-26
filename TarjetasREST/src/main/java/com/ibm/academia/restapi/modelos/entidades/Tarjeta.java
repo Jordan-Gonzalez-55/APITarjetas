@@ -31,18 +31,6 @@ public class Tarjeta implements Serializable {
     private String pasion;
 
     @Transient
-    @NotNull(message = "No puede ser nulo")
-    @NotEmpty(message = "No puede estar vacio")
-    @Positive(message = "Debe ser mayor a 0")
-    private Integer edadSeleccionada;
-
-    @Transient
-    @NotNull(message = "No puede ser nulo")
-    @NotEmpty(message = "No puede estar vacio")
-    @Positive(message = "Debe ser mayor a 0")
-    private Double salarioSeleccionado;
-
-    @Transient
     private Integer puerto;
     //--------------------------------------
 

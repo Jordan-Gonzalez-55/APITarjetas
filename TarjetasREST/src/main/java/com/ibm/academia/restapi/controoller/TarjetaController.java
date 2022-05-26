@@ -1,12 +1,14 @@
 package com.ibm.academia.restapi.controoller;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 import javax.websocket.server.PathParam;
 
 import com.ibm.academia.restapi.excepciones.NotFoundException;
 import com.ibm.academia.restapi.validaciones.TarjetaValidacion;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.data.repository.query.Param;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,9 +27,21 @@ public class TarjetaController {
 	@Autowired
 	private TarjetaValidacion tarjetaValidacion;
 
+	@Autowired
+	private Environment environment;
+
 	@GetMapping
 	public ResponseEntity<?> obtenerTarjetas(){
-		return new ResponseEntity<List<Tarjeta>>((List<Tarjeta>) tarjetaService.buscarTodos(),HttpStatus.OK);
+
+		List<Tarjeta> listaTrajetas = (List<Tarjeta>) tarjetaService.buscarTodos();
+		listaTrajetas
+		.stream().
+		map(tarjeta -> {
+			tarjeta.setPuerto(Integer.parseInt(environment.getProperty("local.server.port")));
+			return tarjeta;
+		}).collect(Collectors.toList());
+
+		return new ResponseEntity<List<Tarjeta>>(listaTrajetas,HttpStatus.OK);
 	}
 
 	@GetMapping("mejorOferta/{pasion}/{salario}/{edad}")

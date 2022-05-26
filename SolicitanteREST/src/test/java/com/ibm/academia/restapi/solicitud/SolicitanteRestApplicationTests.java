@@ -1,12 +1,12 @@
 package com.ibm.academia.restapi.solicitud;
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class SolicitanteRestApplicationTests {
 
-	@Test
+	//@Test
 	void contextLoads() {
 	}
 

@@ -17,7 +17,7 @@ public class Solicitante implements Serializable {
     //private Integer edadSeleccionada;
     //private Double salarioSeleccionado;
     private String nombreTarjeta;
-    //private Integer puerto;
+    private Integer puerto;
 
 
     private static final long serialVersionUID = 9043160628483851183L;

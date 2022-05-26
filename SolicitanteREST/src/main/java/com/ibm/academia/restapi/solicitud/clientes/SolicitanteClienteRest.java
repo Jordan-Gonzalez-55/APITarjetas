@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.ibm.academia.restapi.solicitud.modelos.entidades.Solicitante;
 
-@FeignClient(name = "api-tarjetas", url = "localhost:8080")
+@FeignClient(name = "api-tarjetas")
 public interface SolicitanteClienteRest {
 	
 	@GetMapping("/api/vi/rest-tarjetas/tarjetas")
